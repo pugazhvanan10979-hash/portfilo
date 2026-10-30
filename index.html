@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pugazhvanan | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080808;
+            color: white;
+        }
+
+        header {
+            background: #111;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid red;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .home {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #080808, #260000);
+        }
+
+        .home h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .home h1 span {
+            color: red;
+        }
+
+        .home h2 {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            color: #aaa;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 30px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            color: red;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .heading span {
+            color: red;
+        }
+
+        .about-box {
+            background: #151515;
+            padding: 35px;
+            border-left: 5px solid red;
+            border-radius: 10px;
+            line-height: 2.2;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .about-box strong {
+            color: red;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .skill-card {
+            background: #151515;
+            border: 1px solid #333;
+            padding: 35px;
+            width: 230px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-color: red;
+            box-shadow: 0 0 15px red;
+        }
+
+        .skill-card h3 {
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #151515;
+        }
+
+        footer {
+            background: #050505;
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+            border-top: 2px solid red;
+        }
+
+        @media(max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 7px;
+                display: inline-block;
+            }
+
+            .home h1 {
+                font-size: 38px;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PUGAZH.L</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobby">Hobby</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<section class="home" id="home">
+    <div>
+        <h2>WELCOME TO MY PORTFOLIO</h2>
+        <h1>I'm <span>PUGAZHVANAN</span></h1>
+        <h2>Mechanical Engineering Student</h2>
+        <p>
+            Passionate about Mechanical Engineering,
+            Technology and Programming.<br>
+            Learning today, building tomorrow!
+        </p>
+
+        <a href="#about" class="btn">Explore My Profile</a>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="about-box">
+        <p><strong>Name:</strong> Pugazhvanan L</p>
+        <p><strong>Department:</strong> Mechanical Engineering</p>
+        <p><strong>Date of Birth:</strong> 14.02.2009</p>
+        <p><strong>College:</strong> Mount Zion Engineering and Technology, Pudukkottai</p>
+        <p><strong>Native Place:</strong> A. Vadipatti, Theni District</p>
+        <p><strong>Hobby:</strong> Cricket</p>
+        <p><strong>Technical Skill:</strong> Python</p>
+    </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>PYTHON</h3>
+            <p>Programming and coding skills.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>MECHANICAL</h3>
+            <p>Interest in mechanical engineering and technology.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>TEAMWORK</h3>
+            <p>Learning collaboration and teamwork through sports.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- HOBBY SECTION -->
+<section id="hobby">
+    <h2 class="heading">My <span>Hobby</span></h2>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>CRICKET 🏏</h3>
+            <p>
+                Cricket is my favourite hobby.
+                I enjoy playing cricket and
+                improving my teamwork.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <p>Thank you for visiting my personal portfolio!</p>
+    <p>Let's learn, create and grow together.</p>
+
+    <a href="#home" class="btn">Back to Top</a>
+</section>
+
+<footer>
+    <p>© 2026 Pugazhvanan L | Personal Portfolio</p>
+    <p>Designed with ❤️ in Black & Red Theme</p>
+</footer>
+
+</body>
+</html>
